@@ -1,0 +1,33 @@
+
+
+.meal-card{
+    color: white;
+background-color: green;
+width: 100%;
+padding: 20px;
+border-bottom: 1px;
+margin: 10px auto;
+padding: 10px 20px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.adding-meal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.adding-button{
+background-color: brown;
+color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 5px;
+    align-self: center;
+}

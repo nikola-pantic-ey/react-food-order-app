@@ -1,0 +1,44 @@
+
+.modal-item{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: auto 20px;
+margin:10px auto;
+
+}
+
+.modal-item-info{
+
+    width: 20%;
+
+}
+
+.modal-price-and-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.modal-amount{
+    padding: 3px;
+border:1px solid grey;
+border-radius: 7px;
+
+}
+
+.modal-button{
+height:30px;
+width:30px;
+font-size: 120%;
+text-align: center;
+vertical-align:middle;
+background-color: white;
+color: brown;
+border:2px solid brown;
+padding: 5px;
+border-radius: 10px;
+margin:5px;
+
+}
