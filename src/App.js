@@ -9,10 +9,8 @@ export const Context = createContext();
 function App() {
   const reduceItems = (state, action) => {
     if (action.type === "ADD") {
-      const newAmount = state.itemsList.reduce(
-        (acc, e) => acc + e.price * e.amount,
-        0
-      );
+      const newAmount =
+        state.totalAmount + action.item.price * action.item.amount;
 
       const existingItemIndex = state.itemsList.findIndex(
         (e) => e.id === action.item.id
@@ -45,10 +43,7 @@ function App() {
       let updatedItemsList = [];
 
       if (existingItem.amount === 1) {
-        updatedItemsList = [...state.itemsList];
-        updatedItemsList = state?.updatedItemsList?.filter(
-          (e) => e.id !== action.id
-        );
+        updatedItemsList = state?.itemsList?.filter((e) => e.id !== action.id);
       } else {
         const updatedItem = {
           ...existingItem,
